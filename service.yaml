@@ -1,0 +1,13 @@
+apiVersion: config.songbird-fw.com/v1alpha1
+kind: Service
+metadata:
+  name: dns # primary key
+  comment: 'this is a service'
+  color: black
+  category: 'undefined'
+spec:
+  protocols:
+    - type: TCP
+      port: 53
+    - type: UDP
+      port: 53

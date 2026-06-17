@@ -1,0 +1,10 @@
+apiVersion: config.songbird-fw.com/v1alpha1
+kind: RuleOrder
+metadata:
+  name: rule-order-test
+  uuid: d6a6430e-2207-4c90-91aa-5208f1765bc1 # primary key
+  comment: 'this is a rule order'
+spec:
+  order:
+    1: d42ffd4d-6e92-4403-aa9e-2201b302f288
+    2: 308f8e08-5cf8-4390-927c-432329ca091b

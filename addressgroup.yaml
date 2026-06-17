@@ -1,0 +1,13 @@
+apiVersion: config.songbird-fw.com/v1alpha1
+kind: AddressGroup
+metadata:
+  name: grp-lan # primary key
+  comment: 'this is an address group'
+  color: green
+spec:
+  # IDEA: selector with annotation?
+  # selector:
+  #   config.songbird-fw.com/Name: Web
+  addresses:
+    - name: LAN
+    - name: Printers

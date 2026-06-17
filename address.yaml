@@ -1,0 +1,35 @@
+apiVersion: config.songbird-fw.com/v1alpha1
+kind: Address
+metadata:
+  name: LAN # primary key
+  comment: 'this is a subnet address'
+  color: black
+spec:
+  subnet:
+    interface: lan1
+    ip: 192.168.0.0
+    netmask: 255.255.255.0
+---
+apiVersion: config.songbird-fw.com/v1alpha1
+kind: Address
+metadata:
+  name: Printers # primary key
+  comment: 'this is an address'
+  color: black
+spec:
+  range:
+    interface: lan2
+    start: 192.168.2.1
+    end: 192.168.2.10
+---
+apiVersion: config.songbird-fw.com/v1alpha1
+kind: Address
+metadata:
+  name: Google # primary key
+  comment: 'this is an address'
+  color: black
+spec:
+  fqdn:
+    interface: any
+    domainName: www.google.com
+    
