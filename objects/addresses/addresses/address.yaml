@@ -6,8 +6,8 @@ metadata:
   comment: 'this is a subnet address'
   color: black
 spec:
+  interface: lan1
   subnet:
-    interface: lan1
     ip: 192.168.0.0
     netmask: 255.255.255.0
 ---
@@ -19,8 +19,8 @@ metadata:
   comment: 'this is an address'
   color: black
 spec:
+  interface: lan2
   range:
-    interface: lan2
     start: 192.168.2.1
     end: 192.168.2.10
 ---
@@ -32,7 +32,16 @@ metadata:
   comment: 'this is an address'
   color: black
 spec:
-  fqdn:
-    interface: any
-    domainName: www.google.com
-    
+  interface: any
+  fqdn: www.google.com
+---
+apiVersion: config.songbird-fw.com/v1alpha1
+kind: Address
+metadata:
+  name: win-pc # primary key
+  uuid: 4c3ad178-ab82-40e7-9307-8e22afa5b313
+  comment: 'this is a mac address'
+  color: black
+spec:
+  interface: any
+  mac: 34-29-8F-74-F4-6A
