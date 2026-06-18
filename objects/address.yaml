@@ -2,6 +2,7 @@ apiVersion: config.songbird-fw.com/v1alpha1
 kind: Address
 metadata:
   name: LAN # primary key
+  uuid: e2587a31-79e8-4e79-b61a-c41b42ecbf96
   comment: 'this is a subnet address'
   color: black
 spec:
@@ -14,6 +15,7 @@ apiVersion: config.songbird-fw.com/v1alpha1
 kind: Address
 metadata:
   name: Printers # primary key
+  uuid: e5c14420-df44-404b-a93d-a12f4b953fe1
   comment: 'this is an address'
   color: black
 spec:
@@ -26,6 +28,7 @@ apiVersion: config.songbird-fw.com/v1alpha1
 kind: Address
 metadata:
   name: Google # primary key
+  uuid: ebc7c88a-2d13-4551-84cb-097b8f901341
   comment: 'this is an address'
   color: black
 spec:
