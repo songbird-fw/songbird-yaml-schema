@@ -1,3 +1,9 @@
+# ARCHIVED
+## This repository has been archived, the development has moved to https://github.com/songbird-fw/songbird-fw
+
+---
+---
+
 # songbird-yaml-schema — v1alpha1
 
 Formal schema for the Songbird configuration (RA constraint **C-005**, requirements **R-020.2 / R-020.3 / R-052**).
